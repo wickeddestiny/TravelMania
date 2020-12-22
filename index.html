@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-wrapper">
+        <div class="wrapper">
+            <header>
+                <img src="./images/logo.png" class="nav-logo">
+                
+                <nav class="navbar">
+                
+                    <ul class="nav-expander">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Book Up</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </nav>
+                <a onclick="navActivate()"><i class="fa fa-bars" id="bars"></i></a>
+            </header>
+        </div>
+        <div class="hero-content">
+            <h1>BE</h1>
+            <p>EVERYWHERE!</p>
+        </div>
+    </div>    
+    
+    <div class="exclusive-container">
+        <h1>Exclusive Places</h1>
+        <div class="exclusive-cards">
+            <div class="leftSide">
+                <div class="ex-card" onclick="flip()">
+                    <img src="/images/Greece.jpg" class="ex-images">
+                    <h3><strong>Greece</strong></h3>
+                    <p>Athens</p>
+                    <p>Sparta</p>
+                    <p>Solun</p>
+                    <p>Lephkada</p>
+                    <span>$119,<small>99</small></span>
+                </div>
+                <div class="ex-card">
+                    <img src="/images/spain.jpg" class="ex-images">
+                    <h3><strong>Spain</strong></h3>
+                    <p>Madrid</p>
+                    <p>Sevilla</p>
+                    <p>Barselona</p>
+                    <p>Malaga</p>
+                    <span>$119,<small>99</small></span>
+                </div>
+            </div>
+            
+            <div class="rightSide">
+                <div class="ex-card">
+                    <img src="./images/Serbia.jpg" class="ex-images">
+                    <h3><strong>Serbia</strong></h3>
+                    <p>Nis</p>
+                    <p>Novi Sad</p>
+                    <p>Belgrade</p>
+                    <p>Kraljevo</p>
+                    <span>$119,<small>99</small></span>
+
+                </div>
+                <div class="ex-card">
+                    <img src="./images/Italy.jpg" class="ex-images">
+                    <h3><strong>Italy</strong></h3>
+                    <p>Rome</p>
+                    <p>Napoli</p>
+                    <p>Venezia</p>
+                    <p>Torino</p>
+                    <span>$119,<small>99</small></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="otherDestinations">
+        <h1>Single Travel</h1>
+
+        <!-- 
+            First
+        -->
+
+        <div class="first-row">
+            <div class="cards">
+                <img src="./images/athina.jpg" class="small-images" alt="">
+                <h3><strong>Greece</strong></h3>
+                <p>Athens</p>
+                <span>$119,<small>99</small></span>
+            </div>
+
+            <div class="cards">
+                <img src="./images/berlin.jpg" class="small-images" alt="">
+                <h3><strong>Germany</strong></h3>
+                <p>Berlin</p>
+                <span>$119,<small>99</small></span>
+            </div>
+
+            <div class="cards">
+                <img src="./images/moscow.jpg" class="small-images" alt="">
+                <h3><strong>Russia</strong></h3>
+                <p>Moscow</p>
+                <span>$119,<small>99</small></span>
+            </div>
+        </div>
+
+        <!-- 
+            Second
+        -->
+
+        <div class="second-row">
+            <div class="cards">
+                <img src="./images/belgrade.jpg" class="small-images" alt="">
+                <h3><strong>Serbia</strong></h3>
+                <p>Belgrade</p>
+                <span>$119,<small>99</small></span>
+            </div>
+
+            <div class="cards">
+                <img src="./images/london.jpg" class="small-images" alt="">
+                <h3><strong>England</strong></h3>
+                <p>London</p>
+                <span>$119,<small>99</small></span>
+            </div>
+
+            <div class="cards">
+                <img src="./images/madrid.jpg" class="small-images" alt="">
+                <h3><strong>Spain</strong></h3>
+                <p>Madrid</p>
+                <span>$119,<small>99</small></span>
+            </div>
+        </div>
+        <!-- 
+            Third
+        -->
+        <div class="third-row">
+            <div class="cards">
+                <img src="./images/newyork.jpg" class="small-images" alt="">
+                <h3><strong>America</strong></h3>
+                <p>New York</p>
+                <span>$119,<small>99</small></span>
+            </div>
+
+            <div class="cards">
+                <img src="./images/Paris.jpg" class="small-images" alt="">
+                <h3><strong>France</strong></h3>
+                <p>Paris</p>
+                <span>$119,<small>99</small></span>
+            </div>
+
+            <div class="cards">
+                <img src="./images/warsaw.jpg" class="small-images" alt="">
+                <h3><strong>Poland</strong></h3>
+                <p>Warsaw</p>
+                <span>$119,<small>99</small></span>
+            </div>
+        </div>
+       
+    </section>
+    <section class="bookUp">
+        <h2>BOOK UP</h2>
+        <div class="form-top">
+
+            <label for="Package">Select Program</label>
+            <select class="packageInput" name="Package">
+                <option value="exclusive">Exclusive</option>
+                <option value="normal">Normal</option>
+            </select>
+            <label for="Package">Select Package</label>
+
+            <select class="packageInput" name="Package">
+                <option value="greece">Greece</option>
+                <option value="spain">Spain</option>
+                <option value="serbia">Serbia</option>
+                <option value="italy">Italy</option>
+            </select>
+
+            <!-- <select class="packageInput" name="Package">
+                <option value="exclusive">Exclusive</option>
+                <option value="normal">Normal</option>
+                <option value="exclusive">Exclusive</option>
+                <option value="normal">Normal</option>
+            </select> -->
+        </div>
+        <div class="clupon">
+            <input type="text" placeholder="Got a Coupon?">
+            <span>TOTAL<h1> 120$ </h1></span>
+        </div>
+    </section>
+
+    <div class="aboutUs">
+        <div class="AboutUsText">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, veniam?
+        </div>
+        <img src="#" alt="">
+        <div class="companies">
+            <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">
+        </div>
+    </div>
+
+
+    <footer>
+        <ul>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+        </ul>
+        <ul>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+        </ul>
+    </footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
