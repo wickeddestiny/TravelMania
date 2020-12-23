@@ -5,17 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   max-width: 100vh;
-  height: 100vh;
+  max-height: 100vh;
   font-family: "Cairo", sans-serif;
 }
 
 .hero-wrapper {
   background-image: url(./images/heroBackground.jpg);
   background-size: cover;
-  height: 50%;
+  height: 80%;
   width: 100%;
 }
 
@@ -35,12 +34,13 @@ header {
 }
 
 .nav-logo {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 }
-
+                                        
 .nav-expander {
-  /*                                       */
+  display: none;
+  /*
   position: absolute;
   top: 10%;
   right: 50%;
@@ -48,9 +48,10 @@ header {
   background-color: rgba(96, 121, 190, 0.6);
   width: 100%;
   padding: 100px;
-  display: none;
+  
   flex-direction: column;
   align-items: center;
+  */
 }
 
 li {
@@ -66,11 +67,12 @@ a {
 }
 
 #bars {
-  font-size: 2.3rem;
+  font-size: 2rem;
+  align-items: center;
 }
 
 .hero-content {
-  height: 50%;
+  height: 20%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -80,11 +82,12 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   color: seashell;
+  text-shadow: black 1px 1px;
 }
 .hero-content p {
-  font-size: 3.2rem;
+  font-size: 1.9rem;
   color: #a55fc1;
   font-weight: 800;
   text-shadow: black 1px 1px;
@@ -93,7 +96,7 @@ a {
 .exclusive-container {
   margin: auto auto;
   width: 100%;
-  height: 110%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,20 +105,26 @@ a {
   background-image: linear-gradient(315deg, #eec0c6 34%, #7ee8fa 74%);
 }
 .exclusive-container h1 {
-  margin: 4rem auto 0px auto;
+  margin: 2rem auto 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 2.2rem;
   color: #4394ff;
   text-shadow: black 1px 1px;
+}
+.exclusive-cards {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .leftSide {
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  margin: 4rem auto;
+  margin: 1rem auto;
 }
 .rightSide {
   display: flex;
@@ -125,30 +134,30 @@ a {
 }
 .ex-card {
   margin: 0.2rem 2rem;
-  padding: 1.6rem;
-  width: 100%;
+  padding: 1rem;
+  width: 90%;
   border: rgb(3, 183, 255) 2px solid;
   align-items: center;
   border-radius: 2rem;
   background-color: #b3cdd1;
   background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
   cursor: pointer;
+  
 }
 
 .ex-images {
-  width: 120px;
-  height: 130px;
+  width: 70px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .ex-card h3 {
   position: relative;
-  left: -20%;
-  width: 142%;
-  font-size: 2.4rem;
+  width: 100%;
+  font-size: 1.5rem;
   border-bottom: 1px black solid;
   font-family: "Cairo", sans-serif;
 }
@@ -160,37 +169,55 @@ a {
   background-color: rgba(96, 121, 190, 0.6);
   border-radius: 15px;
   color: #5fff2f;
+  text-shadow: black 0.8px 0.8px;
   font-family: "Poppins", sans-serif;
 }
 .otherDestinations {
   background-image: url(./images/solidBackground.jpg);
   background-size: cover;
   color: cornsilk;
+  max-width: 100%;
+  margin: 0;
+}
+.otherDestinations h1 {
+  color: red;
+  display: flex;
+  justify-content: center;
+
 }
 
 .first-row,
 .second-row,
 .third-row {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .cards {
-  padding: 2.6rem;
-  margin: 1rem 0.5rem;
+  width:30%;
+  padding: 0.8rem;
+  margin: 0.5rem 2px;
   background-color: rgba(97, 97, 97, 0.3);
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 700;
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .cards:hover {
   background-color: rgba(97, 97, 97, 0.8);
 }
 
 .cards img {
-  width: 65px;
-  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .cards span {
