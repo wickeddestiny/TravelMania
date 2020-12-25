@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
     <div class="hero-wrapper">
@@ -37,7 +37,7 @@
         <div class="exclusive-cards">
             <div class="leftSide">
                 <div class="ex-card" onclick="flip()">
-                    <img src="/images/Greece.jpg" class="ex-images">
+                    <img src="./images/Greece.jpg" class="ex-images">
                     <h3><strong>Greece</strong></h3>
                     <p>Athens</p>
                     <p>Sparta</p>
@@ -46,7 +46,7 @@
                     <span>$119,<small>99</small></span>
                 </div>
                 <div class="ex-card">
-                    <img src="/images/spain.jpg" class="ex-images">
+                    <img src="./images/spain.jpg" class="ex-images">
                     <h3><strong>Spain</strong></h3>
                     <p>Madrid</p>
                     <p>Sevilla</p>
@@ -166,19 +166,25 @@
         <h2>BOOK UP</h2>
         <div class="form-top">
 
-            <label for="Package">Select Program</label>
-            <select class="packageInput" name="Package">
-                <option value="exclusive">Exclusive</option>
-                <option value="normal">Normal</option>
-            </select>
-            <label for="Package">Select Package</label>
+            <div class="option-target">
+                <label for="Package">Select Package:</label>
+                <select class="packageInput" name="Package">
+                    <option value="exclusive">Exclusive</option>
+                    <option value="normal">Normal</option>
+                </select>
+                <label for="Program">Select Program:</label>
 
-            <select class="packageInput" name="Package">
-                <option value="greece">Greece</option>
-                <option value="spain">Spain</option>
-                <option value="serbia">Serbia</option>
-                <option value="italy">Italy</option>
-            </select>
+                <select class="packageInput" name="Program">
+                    <option value="greece">Greece</option>
+                    <option value="spain">Spain</option>
+                    <option value="serbia">Serbia</option>
+                    <option value="italy">Italy</option>
+                </select>
+                <div class="cupon">
+                    <input type="text" placeholder="Got a Coupon?">
+                    
+                </div>
+            </div>
 
             <!-- <select class="packageInput" name="Package">
                 <option value="exclusive">Exclusive</option>
@@ -186,47 +192,49 @@
                 <option value="exclusive">Exclusive</option>
                 <option value="normal">Normal</option>
             </select> -->
-        </div>
-        <div class="clupon">
-            <input type="text" placeholder="Got a Coupon?">
-            <span>TOTAL<h1> 120$ </h1></span>
+       
+            <div class="pricing">
+                <span>TOTAL:<h1> 120$ </h1></span>
+                <a href="#"> Pay Now</a>
+            </div>
+          
+            
         </div>
     </section>
 
     <div class="aboutUs">
+        <h1> About our Company</h1>
         <div class="AboutUsText">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, veniam?
+            Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit.
+             Id consequuntur, laboriosam quibusdam quaerat corrupti dolor in,
+              ipsam ad error, voluptates ea maxime cum sit nam voluptate natus laudantium?
+               Doloribus, veniam!
+
         </div>
-        <img src="#" alt="">
+        <img src="./images/office-aboutUs.jpg" class="office" alt="">
         <div class="companies">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
+            <img src="./images/firstLogoCompany.png" class="companyLogo" alt="">
+            <img src="./images/secondLogoCompany.png" class="companyLogo" alt="">
+            <img src="./images/thirdLogoCompany.png" class="companyLogo" alt="">
+            <img src="./images/fourthLogoCompany.png" class="companyLogo" alt="">
+            <img src="./images/fifthLogoCompany.png" class="companyLogo" alt="">
+            <img src="./images/sixthLogoCompany.png" class="companyLogo" alt="">
         </div>
     </div>
 
 
     <footer>
         <ul>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Exclusive</a></li>
+            <li><a href="#">Single Travel</a></li>
         </ul>
         <ul>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li><a href="#">Book Up</a></li>
+            <li><a href=".aboutUs">About Us</a></li>
+            <li><a href="#">Companies</a></li>
+            
         </ul>
     </footer>
 
