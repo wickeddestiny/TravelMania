@@ -14,13 +14,14 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   font-family: "Cairo", sans-serif;
+  z-index: 1;
 }
 
 .hero-wrapper {
   background-image: url(./images/heroBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 
@@ -43,27 +44,26 @@ header {
   width: 8rem;
   height: 8rem;
 }
+.navbar {
+  position: relative;
+}
 
 .nav-expander {
-  display: none;
-  /*
   position: absolute;
-  top: 10%;
-  right: 50%;
-  transform: translate(50%, 10%);
-  background-color: rgba(96, 121, 190, 0.6);
-  width: 100%;
-  padding: 100px;
-  
+  display: none;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  */
+  background-color: rgba(0, 0, 0, 0.719);
+  z-index: 9;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 0;
 }
 
 li {
   list-style: none;
   margin-top: 25px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -75,6 +75,7 @@ a {
 #bars {
   font-size: 2rem;
   align-items: center;
+  width: 40px;
 }
 
 .hero-content {
@@ -88,12 +89,12 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 1.9rem;
   color: seashell;
   text-shadow: black 1px 1px;
 }
 .hero-content p {
-  font-size: 1.9rem;
+  font-size: 3.1rem;
   color: #a55fc1;
   font-weight: 800;
   text-shadow: black 1px 1px;
@@ -170,6 +171,13 @@ a {
   font-size: 1.5rem;
   border-bottom: 1px black solid;
   font-family: "Cairo", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.856) 1px 1px;
+}
+.ex-card p {
+  position: relative;
+  width: 100%;
+  font-family: "Cairo", sans-serif;
+  color: black;
 }
 
 .ex-card > span {
@@ -188,10 +196,12 @@ a {
   color: cornsilk;
   max-width: 100%;
   margin: 0;
+  height: 100%;
 }
 .otherDestinations h1 {
   color: rgb(97, 97, 97);
   display: flex;
+  font-size: 3rem;
   justify-content: center;
   text-shadow: rgb(150, 150, 150) 1px 1px;
   border-top: black 2px dotted;
@@ -243,15 +253,15 @@ a {
 .bookUp {
   background-color: #aff6cf;
   background-image: linear-gradient(330deg, #aff6cf 0%, #9f98e8 74%);
-  width: 100vw;
-  height: 180vh;
+  width: 100%;
+  height: 80vh;
 }
 
 .bookUp h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
   color: #5fff2f;
   text-shadow: black 1px 1px;
@@ -306,15 +316,16 @@ a {
   text-align: center;
   font-size: 1rem;
 }
-.form-top .pricing {
+.pricing {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin: auto auto;
+  margin-top: 10%;
+  width: 300px;
   padding: 1rem;
-  margin: auto 30%;
-  border: rgba(96, 121, 190, 0.4) 2px dotted;
+  border: rgba(96, 121, 190, 0.4) 3px dotted;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
 }
@@ -322,6 +333,18 @@ a {
   margin: 1rem auto;
   color: #5fff2f;
   text-shadow: black 0.5px 0.5px;
+}
+.form-top a {
+  margin: auto;
+  text-align: center;
+  color: #03ff63;
+  text-shadow: black 0.5px 0.5px;
+}
+.pricing button {
+  padding: 1rem;
+  font-size: 1.8rem;
+  background-color: rgba(61, 61, 61, 0.849);
+  border-radius: 15px;
 }
 
 .aboutUs {
@@ -331,44 +354,49 @@ a {
     ),
     url("./images/beachTable.jpg");
   background-repeat: no-repeat;
-  height: 110vh;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   position: relative;
+  padding-top: 6rem;
 }
 .aboutUs h1 {
   color: #4394ff;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.office {
+  width: 100%;
+  height: 100%;
 }
 
 .AboutUsText {
-  margin: 1.5rem auto;
+  margin: 2rem auto;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #10458a;
+  color: #1c5fb6;
 }
 
-.aboutUs img {
-  width: 100%;
-  position: relative;
-}
 .companies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
-.companies .companyLogo {
+.companyLogo {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   width: 33.3%;
   align-items: center;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(255, 255, 255);
 }
 footer {
   background-color: black;
@@ -376,12 +404,154 @@ footer {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 footer ul li {
-  margin: 1rem 1.2rem;
+  margin: 1rem 0.5rem;
+  flex-direction: row;
 }
 footer ul a {
   color: #4394ff;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+.newsLetterField {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+footer label {
+  display: flex;
+}
+footer input {
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .hero-wrapper {
+    height: 100vh;
+  }
+  .office {
+    width: 50%;
+    height: 50%;
+    margin: 1.5rem auto;
+  }
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+  }
+  .companyLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 125px;
+    height: 125px;
+  }
+  #bars {
+    font-size: 2.8rem;
+  }
+  .nav-logo {
+    width: 13rem;
+    height: 10rem;
+  }
+  .cupon input {
+    width: 250px;
+  }
+  .cupon input::placeholder {
+    font-size: 1.6rem;
+  }
+  .option-target {
+    font-size: 2.4rem;
+  }
+
+  .option-target select {
+    width: 300px;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .option-target option {
+    padding: 0.4rem;
+    width: 100px;
+  }
+
+  footer ul a {
+    font-size: 1.4rem;
+  }
+
+  footer label {
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+  footer input {
+    width: 40%;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-wrapper {
+    height: 100vh;
+  }
+  .ex-card {
+    width: 300px;
+  }
+  .ex-images {
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+  }
+
+  .ex-card h3 {
+    position: relative;
+    font-size: 2rem;
+  }
+
+  .ex-card > span {
+    font-size: 1.8rem;
+  }
+  #bars {
+    font-size: 2.8rem;
+    align-items: center;
+  }
+  .nav-logo {
+    width: 13rem;
+    height: 10rem;
+  }
+  .nav-expander {
+    position: absolute;
+    top: 0rem;
+    right: 7rem;
+    width: 20%;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  .pricing {
+    margin-top: 5%;
+  }
+  .otherDestinations {
+    padding: 2rem;
+  }
+}
+@media (min-width: 1920px) {
+  .nav-expander {
+    position: absolute;
+    top: 0rem;
+    right: 16rem;
+    width: 20%;
+    padding: 2rem;
+    border-radius: 20px;
+  }
 }

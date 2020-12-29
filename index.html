@@ -13,22 +13,22 @@
             <header>
                 <img src="./images/logo.png" class="nav-logo">
                 
-                <nav class="navbar">
+                
+                <a><i class="fa fa-bars" id="bars"></i></a>
+            </header>
+        </div>
+        <nav class="navbar">
                 
                     <ul class="nav-expander">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Book Up</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#bookUpId">Book Up</a></li>
+                        <li><a href="#aboutUsId">About Us</a></li>
+                        <li><a href="#footerId">Contact</a></li>
                         <li><a href="#">Account</a></li>
                     </ul>
                 </nav>
-                <a onclick="navActivate()"><i class="fa fa-bars" id="bars"></i></a>
-            </header>
-        </div>
         <div class="hero-content">
-            <h1>BE</h1>
-            <p>EVERYWHERE!</p>
+            <h1>TRAVEL</h1>
+            <p>ANYWHERE!</p>
         </div>
     </div>    
     
@@ -70,6 +70,9 @@
                 <div class="ex-card">
                     <img src="./images/Italy.jpg" class="ex-images">
                     <h3><strong>Italy</strong></h3>
+                    <div>
+                        
+                    </div>
                     <p>Rome</p>
                     <p>Napoli</p>
                     <p>Venezia</p>
@@ -162,7 +165,7 @@
         </div>
        
     </section>
-    <section class="bookUp">
+    <section class="bookUp" id="bookUpId">
         <h2>BOOK UP</h2>
         <div class="form-top">
 
@@ -195,14 +198,16 @@
        
             <div class="pricing">
                 <span>TOTAL:<h1> 120$ </h1></span>
-                <a href="#"> Pay Now</a>
+                <button>
+                    <a href="#"> Pay Now</a>
+                </button>
             </div>
           
             
         </div>
     </section>
 
-    <div class="aboutUs">
+    <div class="aboutUs" id="aboutUsId">
         <h1> About our Company</h1>
         <div class="AboutUsText">
             Lorem ipsum dolor sit 
@@ -224,22 +229,30 @@
     </div>
 
 
-    <footer>
+    <footer id="footerId">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Exclusive</a></li>
-            <li><a href="#">Single Travel</a></li>
+            <li><a style="color: red;"  href="#">Location</a></li>
+            <li><a style="color: red;" href="#">Serbia </a></li>
+            <li><a style="color: red;" href="#">Nis</a></li>
         </ul>
+
+        <div class="newsLetterField">
+            <label for="newsletter" style="color: rgb(255, 217, 146);" class="newsLabel">Apply for Newsletter:</label>
+            <input type="email" placeholder="Type your E-Mail." autocomplete="" class="newsInput">
+        </div>
+        
         <ul>
-            <li><a href="#">Book Up</a></li>
-            <li><a href=".aboutUs">About Us</a></li>
-            <li><a href="#">Companies</a></li>
-            
+            <li><a style="color: red;"  href="#">Contact/Addres</a></li>
+            <li><a style="color: red;" href="#">Bubanjska</a></li>
+            <li><a style="color: red;" href="#">060/668/0004</a></li>
         </ul>
+        
     </footer>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+    crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
