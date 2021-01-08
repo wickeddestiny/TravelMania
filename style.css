@@ -21,7 +21,7 @@ body {
   background-image: url(./images/heroBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -52,6 +52,7 @@ header {
   position: absolute;
   display: none;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.719);
   z-index: 9;
@@ -127,7 +128,6 @@ a {
 .exclusive-cards {
   max-width: 100%;
   height: 100%;
-
   flex-wrap: wrap;
 }
 .leftSide {
@@ -511,6 +511,12 @@ footer input {
   .hero-wrapper {
     height: 100vh;
   }
+  .exclusive-cards {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
   .ex-card {
     width: 300px;
   }
@@ -537,11 +543,9 @@ footer input {
     height: 10rem;
   }
   .nav-expander {
-    position: absolute;
-    top: 0rem;
-    right: 7rem;
-    width: 20%;
-    padding: 2rem;
+    width: 100%;
+
+    padding: 10rem;
     border-radius: 20px;
   }
   .pricing {
@@ -568,15 +572,26 @@ footer input {
   .mouseField img {
     width: 150px;
     height: 150px;
-    animation: mouseScroll 2s ease-in-out infinite;
+    animation: mouseScroll 3s ease-in-out infinite;
   }
 
   @keyframes mouseScroll {
-    from {
+    0% {
+      opacity: 0.2;
       transform: translateY(0%);
     }
-    to {
+    25% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.6;
+    }
+    100% {
       transform: translateY(50%);
+      opacity: 0.2;
     }
   }
 }
